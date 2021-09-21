@@ -1660,8 +1660,20 @@ mark {
 }
 
 .text-center {
-    text-align: center;
-    font-size: 1.6em;
+    text-align: center
+}
+
+.new-text {
+    font-size: 23px
+}
+
+.citation {
+    font-size: 1.4em;
+    font-style: italic;
+}
+
+.auteur {
+    font-size: 1em;
 }
 
 .text-justify {
@@ -2088,7 +2100,8 @@ pre code {
 }
 
 .col-xs-12 {
-    width: 100%
+    width: 80%;
+    margin: 0 10%
 }
 
 .col-xs-11 {
