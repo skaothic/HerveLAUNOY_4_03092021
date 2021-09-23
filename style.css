@@ -5,6 +5,7 @@
         overflow-x: hidden;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        font-size: 18px;
     }
     
     a,
@@ -88,11 +89,6 @@
         bottom: 0;
         left: 0;
         right: 0;
-    }
-    
-    .texture-paper::before {
-        background: url("img/texture-paper.png");
-        background-size: 280px 280px;
     }
     
     .b-parallax {
@@ -629,6 +625,10 @@
         left: 25px;
     }
     
+    .a__logo:hover {
+        transform: scale(1.5);
+    }
+    
     .snapshot-lb .modal-body {
         padding-bottom: 45px;
     }
@@ -647,11 +647,16 @@
     h6,
     p,
     label,
-    .btn,
-    a {
+    .btn {
         font-family: "helvetica";
         font-weight: 400;
         color: #575757;
+    }
+    
+    a {
+        font-family: "helvetica";
+        font-weight: 400;
+        color: #886767;
     }
     
     .container {
@@ -663,9 +668,10 @@
     }
     
     .h1-bloc {
-        background-color: #303030;
-        opacity: .8;
-        border-radius: 50%;
+        background-color: rgba(76, 69, 48, 0.7);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     .hero-bloc-text-sub {
@@ -683,7 +689,7 @@
     }
     
     p {
-        font-size: 11px;
+        font-size: 14px;
     }
     
     .tight-width-whitespace {
@@ -853,13 +859,13 @@
         }
     }
     
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
         .b-parallax {
             background-attachment: scroll;
         }
     }
     
-    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    @media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
         .b-parallax {
             background-attachment: scroll;
         }
@@ -877,10 +883,7 @@
             overflow-x: hidden;
             position: relative;
         }
-        .bloc {
-            padding-left: constant(safe-area-inset-left);
-            padding-right: constant(safe-area-inset-right);
-        }
+        .bloc {}
         .bloc-group,
         .bloc-group .bloc {
             display: block;
@@ -889,12 +892,13 @@
         .bloc-fill-screen .fill-bloc-top-edge,
         .bloc-fill-screen .fill-bloc-bottom-edge {
             padding: 0 20px;
-            padding-left: constant(safe-area-inset-left);
-            padding-right: constant(safe-area-inset-right);
         }
     }
     
     @media (max-width: 767px) {
+        .portfolio-thumb {
+            width: 100%;
+        }
         .page-container {
             overflow-x: hidden;
             position: relative;
