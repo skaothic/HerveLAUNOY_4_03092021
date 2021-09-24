@@ -46,7 +46,19 @@
     }
     
     .bloc-lg {
-        padding: 100px 50px;
+        padding: 50px;
+    }
+    
+    #bloc-5-cta {
+        height: 400px;
+    }
+    
+    #blocprefoot {
+        width: 30%;
+    }
+    
+    #bloc3 {
+        display: flex;
     }
     
     .bloc-md {
@@ -504,6 +516,7 @@
     
     #bloc-1-hero {
         height: 440px;
+        display: flex;
     }
     
     .scrollToTop {
@@ -592,7 +605,6 @@
         background: rgba(0, 0, 0, .5);
         border: none;
         line-height: 30px;
-        padding: 0 9px 5px;
         opacity: 0.3;
     }
     
@@ -616,12 +628,14 @@
     }
     
     .next-lightbox {
-        padding: 6px 8px 1px 13px;
         right: 25px;
+        height: 35px;
+        width: 35px;
     }
     
     .prev-lightbox {
-        padding: 6px 13px 1px 10px;
+        height: 35px;
+        width: 35px;
         left: 25px;
     }
     
@@ -713,7 +727,9 @@
     
     .social {
         max-width: 400px;
-        margin: auto auto auto auto;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
     }
     
     h2 {
@@ -777,7 +793,6 @@
     
     .black-background {
         background-color: rgba(76, 69, 48, 0.7);
-        padding: 40px 40px 40px 40px;
     }
     
     .bold-link {
