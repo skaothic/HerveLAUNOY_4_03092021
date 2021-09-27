@@ -546,6 +546,9 @@
     }
     
     a[data-lightbox]:hover::before {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         content: "+";
         font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
         font-size: 32px;
@@ -559,6 +562,7 @@
         z-index: 1;
         position: absolute;
         top: 50%;
+        left: 50%;
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
     }
@@ -606,6 +610,9 @@
         border: none;
         line-height: 30px;
         opacity: 0.3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .close-lightbox:hover,
@@ -625,6 +632,9 @@
         top: 45%;
         z-index: 1;
         opacity: 0.4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .next-lightbox {
@@ -670,7 +680,7 @@
     a {
         font-family: "helvetica";
         font-weight: 400;
-        color: #886767;
+        color: black;
     }
     
     .container {
@@ -780,6 +790,8 @@
     
     .portfolio-thumb {
         margin-bottom: 24px;
+        height: 15em;
+        width: 15em;
     }
     
     .portfolio-row {
@@ -810,6 +822,7 @@
     
     .tc-white {
         color: #F3976C;
+        font-weight: 400
     }
     
     .btn-atomic-tangerine {
@@ -844,11 +857,11 @@
     }
     
     .bg-banniere {
-        background-image: url("img/la-chouette-agence-banniere.jpg");
+        background-image: url("img/la-chouette-agence-banniere.webp");
     }
     
     .bg-presentation {
-        background-image: url("img/image-de-presentation.jpg");
+        background-image: url("img/image-de-presentation.webp");
     }
     
     @media (max-width: 1024px) {
@@ -898,7 +911,6 @@
             overflow-x: hidden;
             position: relative;
         }
-        .bloc {}
         .bloc-group,
         .bloc-group .bloc {
             display: block;
@@ -1063,4 +1075,24 @@
         .bloc-mob-center-text {
             text-align: center;
         }
+    }
+    
+    #logo__header {
+        height: 40px;
+        width: 8.6em;
+    }
+    
+    #logoimg {
+        width: 5.5em;
+        height: 5.5em;
+    }
+    
+    #h1contact {
+        background-color: #212121;
+        opacity: .6;
+    }
+    
+    #contact {
+        display: flex;
+        flex-direction: column;
     }

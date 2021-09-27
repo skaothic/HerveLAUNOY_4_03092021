@@ -308,7 +308,8 @@ th {
 @font-face {
     font-family: 'Glyphicons Halflings';
     src: url(../fonts/glyphicons-halflings-regular.eot);
-    src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'), url(../fonts/glyphicons-halflings-regular.woff) format('woff'), url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'), url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
+    src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'), url(../fonts/glyphicons-halflings-regular.woff) format('woff'), url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'), url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg');
+    font-display: swap;
 }
 
 .glyphicon {
@@ -1728,12 +1729,12 @@ a.text-info:hover {
 }
 
 .text-warning {
-    color: #8a6d3b
+    color: red
 }
 
 a.text-warning:focus,
 a.text-warning:hover {
-    color: #66512c
+    color: pink
 }
 
 .text-danger {
@@ -1800,7 +1801,8 @@ a.bg-danger:hover {
 ol,
 ul {
     margin-top: 0;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    list-style: none;
 }
 
 ol ol,
@@ -3172,7 +3174,7 @@ output {
 }
 
 .form-control:focus {
-    border-color: #66afe9;
+    border: #66afe9 solid 3px;
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6)
@@ -6144,9 +6146,10 @@ a.thumbnail:hover {
 }
 
 .alert-warning {
-    color: #8a6d3b;
-    background-color: #fcf8e3;
-    border-color: #faebcc
+    color: red;
+    background-color: #dd281071;
+    border-color: #faebcc;
+    font-weight: 600;
 }
 
 .alert-warning hr {
