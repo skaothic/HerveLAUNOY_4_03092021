@@ -8,6 +8,16 @@
                                 font-size: 18px;
                             }
                             
+                            #h1contact {
+                                background-color: #212121;
+                                opacity: .9;
+                            }
+                            
+                            #contact {
+                                display: flex;
+                                flex-direction: column;
+                            }
+                            
                             a,
                             button {
                                 transition: all .3s ease-in-out;
@@ -691,7 +701,7 @@
                             }
                             
                             .h1-bloc {
-                                background-color: rgba(76, 69, 48, 0.7);
+                                background-color: rgba(76, 69, 48, .9);
                                 display: flex;
                                 flex-direction: column;
                                 align-items: center;
@@ -803,7 +813,7 @@
                             }
                             
                             .black-background {
-                                background-color: rgba(76, 69, 48, 0.7);
+                                background-color: rgba(76, 69, 48, 0.9);
                             }
                             
                             .bold-link {
@@ -1076,13 +1086,5 @@
                                     .bloc-mob-center-text {
                                         text-align: center;
                                     }
-                                }
-                                #h1contact {
-                                    background-color: #212121;
-                                    opacity: .6;
-                                }
-                                #contact {
-                                    display: flex;
-                                    flex-direction: column;
                                 }
                             }
